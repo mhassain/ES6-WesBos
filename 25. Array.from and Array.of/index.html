@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript ES6</title>
+    <style>
+        h1, h3, p{
+            text-align: center;
+            color: #444;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 60px auto;
+        }
+        button {font-size: 50px;}
+        .on {background: #ffc600;}
+    </style>
+    
+   
+</head>
+<body>
+    <h1>WesBos JavaScript ES6 <br> #Part-25</h1>
+    <h3>See the console</h3>
+
+    <div class="people">
+        <p>Kamal</p>
+        <p>Jamal</p>
+        <p>Abdul</p>
+    </div>
+
+    
+    <script>
+        // selectiong p element //
+      const people = document.querySelectorAll('.people p');
+      // make people as Arrary //
+      const peopleArray = Array.from(people, person => {
+        console.log(person);
+        return person.textContent;
+      });
+      
+      console.log(peopleArray);
+
+      // map function for everyelement //
+
+      //const names = peopleArray.map(person => person.textContent);
+    </script>
+</body>
+
+</html>
